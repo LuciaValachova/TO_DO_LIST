@@ -1,0 +1,110 @@
+*{
+    box-sizing:border-box;
+    outline: none;
+}
+
+html, body {
+    height: 100%;
+    background: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.card-body{
+    padding-bottom: 0px !important;
+}
+
+#todoTask,
+#doneTask{
+    padding: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+#doneTask{
+    padding-bottom: 20px;
+    flex-direction:column;
+    li {
+        display: flex;
+        justify-content: space-between;
+        padding:10px 0px;
+       
+        p {
+            margin-bottom:0px;
+            text-decoration: line-through;
+        }
+        .fas {
+            border:2px solid grey;
+            margin:0px;
+            padding:4px;
+            color: grey;
+            
+        }
+        
+        .fas:hover{
+            cursor:pointer;
+            color:red;
+            border:2px solid red;
+        }
+    }
+}
+
+h1 {
+    font-weight: 400 !important;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom:25px !important;
+}
+
+.content {
+    width: 95%;
+    padding: 30px;
+    background: rgb(228, 228, 228);
+}
+
+.border-btm {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    margin: 15px 0;
+}
+
+.far {
+    padding-bottom:0px;
+    font-size:28px;
+    margin:0 10px 0 0;
+    padding:4px;
+    color: rgb(92, 184, 92);
+}    
+
+li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(201, 199, 199);
+    padding:5px 0px;
+}
+li:last-child{
+    border-bottom: none;
+}
+#todoAmount {
+    background-color: rgb(243, 247, 233);
+    padding:10px 0px 10px 25px;
+   
+}
+.amount {
+    font-weight:600 !important;
+}
+
+hr{
+    margin:0px;
+    padding:0px;
+}
+
+.form-control,
+.btn-primary {
+    border-radius:0% !important;
+}
+.form-control-2 {
+    border: 1px solid transparent;
+    background-color: white;
+}
